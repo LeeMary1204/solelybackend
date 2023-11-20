@@ -80,6 +80,7 @@ const sleep = (n) => {
   }
 }
 
+const scheduleObjectSyntax = () => {
 setInterval(function () {
     deleteAll()
     sleep(10000)
@@ -132,7 +133,7 @@ setInterval(function () {
     console.log('runPythonInNodeEnvSync8 start')
     runPythonInNodeEnvSync8()
     console.log('runPythonInNodeEnvSync8 end')
-}, 3 * 60 * 1000)
+}, 3 * 60 * 1000)}
 
 // const scheduleObjectSyntax = () => {
 //   schedule.scheduleJob({ hour: 22, minute: 25 }, () => {
