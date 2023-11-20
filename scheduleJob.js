@@ -81,7 +81,7 @@ const sleep = (n) => {
 }
 
 const scheduleObjectSyntax = () => {
-  schedule.scheduleJob({ hour: 22, minute: 20 }, () => {
+  schedule.scheduleJob({ hour: 22, minute: 25 }, () => {
     deleteAll()
     sleep(10000)
 
