@@ -81,7 +81,7 @@ const sleep = (n) => {
 }
 
 const scheduleObjectSyntax = () => {
-  schedule.scheduleJob('0 0 0 * * *', () => {
+setInterval(function () {
     deleteAll()
     sleep(10000)
 
@@ -133,8 +133,63 @@ const scheduleObjectSyntax = () => {
     console.log('runPythonInNodeEnvSync8 start')
     runPythonInNodeEnvSync8()
     console.log('runPythonInNodeEnvSync8 end')
-  })
-}
+}, 3 * 60 * 1000)}
+
+// const scheduleObjectSyntax = () => {
+//   schedule.scheduleJob({ hour: 22, minute: 25 }, () => {
+//     deleteAll()
+//     sleep(10000)
+
+//     // console.log('login start')
+//     // login()
+//     // console.log('login end')
+//     // sleep(1000)
+
+//     console.log('runPythonInNodeEnvSync start')
+//     runPythonInNodeEnvSync()
+//     console.log('runPythonInNodeEnvSync end')
+//     sleep(1000)
+
+//     console.log('runPythonInNodeEnvSync1 start')
+//     runPythonInNodeEnvSync1()
+//     console.log('runPythonInNodeEnvSync1 end')
+//     sleep(1000)
+
+//     console.log('runPythonInNodeEnvSync2 start')
+//     runPythonInNodeEnvSync2()
+//     console.log('runPythonInNodeEnvSync2 end')
+//     sleep(1000)
+
+//     console.log('runPythonInNodeEnvSync3 start')
+//     runPythonInNodeEnvSync3()
+//     console.log('runPythonInNodeEnvSync3 end')
+//     sleep(1000)
+
+//     console.log('runPythonInNodeEnvSync4 start')
+//     runPythonInNodeEnvSync4()
+//     console.log('runPythonInNodeEnvSync4 end')
+//     sleep(1000)
+
+//     console.log('runPythonInNodeEnvSync5 start')
+//     runPythonInNodeEnvSync5()
+//     console.log('runPythonInNodeEnvSync5 end')
+//     sleep(1000)
+
+//     console.log('runPythonInNodeEnvSync6 start')
+//     runPythonInNodeEnvSync6()
+//     console.log('runPythonInNodeEnvSync6 end')
+//     sleep(1000)
+
+//     console.log('runPythonInNodeEnvSync7 start')
+//     runPythonInNodeEnvSync7()
+//     console.log('runPythonInNodeEnvSync7 end')
+//     sleep(1000)
+
+//     console.log('runPythonInNodeEnvSync8 start')
+//     runPythonInNodeEnvSync8()
+//     console.log('runPythonInNodeEnvSync8 end')
+//   })
+// }
 
 
 
