@@ -2,6 +2,7 @@
 
 from selenium import webdriver
 from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.firefox.options import Options
 import time
 from selenium.webdriver.common.by import By
 import sys
@@ -64,8 +65,9 @@ if __name__ == '__main__':
   jobType = sys.argv[2]
   print('exec python start') 
   
-
-  web = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+  options = Options()
+  options.binary_location = r"C:/Program Files/Mozilla Firefox/firefox.exe"
+  web = webdriver.Firefox(options=options,executable_path=GeckoDriverManager().install())
 
   # web.get('https://www.linkedin.com/?trk=seo-authwall-base_nav-header-logo')
   # time.sleep(5)
